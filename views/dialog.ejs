@@ -1,0 +1,27 @@
+<style>
+  .params {
+    padding: 20px
+  }
+  .btn{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+</style>
+
+<div class="popdown-content">
+  <header>
+    <h2>Generate Gif</h2>
+  </header>
+
+  <section class="body">
+    <iframe width="550" height="355" src="//www.youtube.com/embed/<%=videoId%>" frameborder="0" allowfullscreen></iframe>
+    <form role="search" action="gif" method="POST" class="params">
+      <input type="number" class="form-control" placeholder="start (in sec)" name="start" step="any"">
+            <input type="number" class="form-control " placeholder="duration (in sec) " name="duration" max ="10 ">
+            <input type="hidden" class="form-control " value="<%=videoId%>" name="id" class="id">
+      <button class="btn" type="submit"><i class="fa fa-rocket fa-2x"></i></button>
+    </form>
+
+  </section>
+</div>
