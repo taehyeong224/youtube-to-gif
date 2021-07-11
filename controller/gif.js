@@ -19,6 +19,7 @@ module.exports = async (req, res) => {
       accumulator += sec;
       return accumulator;
     });
+    console.log(`seconds : ${seconds}`)
     const start = new Date(seconds * 1000).toISOString().substr(11, 8);
     const duration = parseInt(req.body.duration, 10);
     

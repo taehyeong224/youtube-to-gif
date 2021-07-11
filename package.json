@@ -20,7 +20,7 @@
     "morgan": "~1.6.1",
     "request": "^2.71.0",
     "sanitize-filename": "^1.1.1",
-    "ytdl-core": "*"
+    "ytdl-core": "^4.8.2"
   },
   "devDependencies": {
     "eslint": "^3.14.1",
